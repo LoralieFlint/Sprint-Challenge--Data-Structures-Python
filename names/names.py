@@ -26,6 +26,7 @@ class BST:
                 else:
                     left_child = self.left
                     left_child.insert(value)
+bst = BST('binary search tree') 
 
 import time
 
@@ -47,10 +48,10 @@ duplicates = []  # Return the list of duplicates in this data structure
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
-for name in names_1: 
-    names_1.insert(name)
+for name in names_1:
+    bst.insert(name)
 for name in names_2:
-    if names_2.contains(name):
+    if bst.contains(name):
         duplicates.append(name)
 
 end_time = time.time()
